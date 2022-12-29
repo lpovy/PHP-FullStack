@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function rand(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+
+        //console yra globalus kintamasis paduotas narsykles
+        //log yra metodas (funkcija), kuri yra perduota narsykles, skirtas atspausdinti kazka
+        let tekstas = 'Tekstas';
+
+        console.log(tekstas)
+
+        const pavadinimas = '"UAB Antakalnio ligonine"';
+        console.log(pavadinimas.length)
+
+        let metai = 2022.99;
+        metai++;
+        console.log(metai);
+
+
+        let a = rand(0, 500000);
+        let b = rand(0, 500000);
+        a = 10001;
+        b = 10000;
+        if (a > b) {
+            console.log('A yra didesnis uz B');
+        }
+        else if (a === b) {
+            console.log('A yra lygu B');
+        }
+        else {
+            console.log('B yra didesnis uz A');
+        }
+
+
+    </script>
+</body>
+
+</html>

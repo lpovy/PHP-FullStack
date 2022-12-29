@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <META http-equiv="X-UA-Compatible" "IE=edge">
+            <meta name"viewport" content="width=device-width, initial-scale=1.0">
+            <title> Prime number</title>
+    </head>
+    <body>
+        <script>
+            // 12/13/2022 //USA formatas
+            // 2022-12-13 // Lietuviškas formatas
+            // 13/12/2022 //Olandiškas formatas
+
+            Date.now() //grazinama dabartine data ir laikas
+            
+            const Date = new Date() 
+                      
+            console.log(Date.getdate())
+
+            
+        </script>
+    </body>
+</html>

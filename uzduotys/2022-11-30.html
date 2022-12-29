@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Užduotys</title>
+</head>
+<body>
+    <script>
+        let vardas = 'Leonardo'; // 8
+        let pavarde = 'Pitas'; //5
+
+        if(vardas.length > pavarde.length) {
+            console.log('Vardas yra ilgesnis už pavardę');
+        } 
+        else if(vardas.length === pavarde.length) {
+            console.log('Vardo ilgis ir pavardės ilgis yra vienodas');
+        } else {
+            console.log('Pavardė yra ilgesnė nei vardas');
+        }
+
+        vardas = 'Laura';
+        pavarde = 'Povyliūtė';
+        const birthday = 2000;
+        const currentYear = 2022;
+
+        console.log('Aš esu', vardas, pavarde, '. Man yra', currentYear - birthday, 'metai(ų)');
+    
+        vardas = 'Salma'; 
+                //01234
+        pavarde = 'Hayek'; 
+                 //01234
+        //vardas[7] //o
+        //rdotas
+        const x = vardas.length - 1;
+        console.log(vardas[x]);
+
+        //const stringas = vardas[vardas.length - 1] + vardas[6] + vardas[7] + pavarde[2] + pavarde[3] + pavarde[4];
+
+        //console.log(stringas);
+
+        const p = 'Once upon a time in hollywood';
+        let phrase = p.replaceAll('o' , '*');
+        console.log(phrase);
+        phrase = phrase.replaceAll('O' , '*');
+        console.log(phrase);
+        
+        function rand(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+
+        const pirmas = rand(0, 2); 
+        const antras = rand(0, 2);
+        const trecias = rand(0, 2);
+        const ketvirtas = rand(0, 2);
+
+        let nuliai = 0;
+        let vienetai = 0;
+        let dvejetai = 0;
+
+        if(pirmas === 0)
+            nuliai++;
+
+        if(antras === 0)
+            nuliai++;
+
+        if(trecias === 0)
+            nuliai++;
+
+        if(ketvirtas === 0)
+            nuliai++;
+
+        if(pirmas === 1)
+            vienetai++;
+
+        if(antras === 1)
+            vienetai++;
+
+        if(trecias === 1)
+            vienetai++;
+            
+        if(ketvirtas === 1)
+            vienetai++;
+
+        if(pirmas === 2)
+            dvejetai++;
+
+        if(antras === 2)
+            dvejetai++;
+
+        if(trecias === 2)
+            dvejetai++;
+            
+        if(ketvirtas === 2)
+            dvejetai++;
+
+        console.log('Skaičiai:', pirmas, antras, trecias, ketvirtas);
+    
+        console.log('Gauti rezultatai:' + nuliai,  vienetai, dvejetai);
+       
+        let skaiciusPoKablelio = 10.993;
+        //Suapvalinimas
+        console.log(skaiciusPoKablelio.toFixed(2));
+
+        
+        const pirma = rand(0, 4); //?
+        const antra = rand(0, 4); //?
+        
+        //Sudetis +
+        //Atimtis -
+        //Daugyba *
+        //Dalyba /
+        console.log(pirma, antra);
+        if(pirma > antra) {
+            console.log((pirma / antra).toFixed(2));
+        } else if(pirma === antra) {
+            console.log('Reikšmės yra lygios');
+        } else {
+            console.log((antra / pirma).toFixed(2));
+        }
+
+        console.log('Dalyba iš nulio negalima');
+
+        const y = pirma.length - 1; antra.length - 1;
+        console.log(pirma[y]); (antra[y])
+
+    </script>    
+</body>
+</html>

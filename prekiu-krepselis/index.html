@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #shopping-cart {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="shopping-cart">
+        <h2>Prekiu krepselis</h2>
+        <form id="add-form">
+            <label for="product">Preke:</label><br>
+            <input type="text" id="product" name="product"><br>
+            <label for="price">Kaina:</label><br>
+            <input type="number" id="price" name="price"><br><br>
+            <button type="submit">Pateikti</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Preke</th>
+                    <th>Kiekis</th>
+                    <th>Kaina</th>
+                    <th>Viso</th>
+
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total:</td>
+                    <td>0€</td>
+
+                </tr>
+            </tfoot>
+        </table>
+        <!--<button id="checkout-button">Atsiskaityti</button>-->
+    </div>
+
+
+    <script src="java.js"></script>
+</body>
+
+</html>
