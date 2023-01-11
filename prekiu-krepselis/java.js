@@ -23,4 +23,5 @@ cartItems.addEventListener('input', e => {
   const quantity = input.value;
   const priceCell = tr.querySelector('td:nth-child(3)');
   const price = parseFloat(priceCell.textContent.replace('$', ''));
-  const total
+  const total ;});
+
